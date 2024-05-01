@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 #map-container {
 	display: flex;
@@ -18,13 +19,14 @@
 }
 #point-list {
 	display: flex;
+	/* overflow: hidden; */
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	position: absolute;
 	height: 100%;
 	width: 400px;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 	top: 0;
 	left: 0;
 	z-index: 100;
@@ -35,16 +37,26 @@
 }
 .item {
 	/* background-color: #fff; */
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px 0;
 	cursor: pointer;
-	/* border: 1px solid gray;
-	border-radius: 25px; */
-	width: 100%;
+	/* border: 1px solid black; */
+	/* border-top: 1px solid gray;
+	border-bottom: 1px solid gray; */
+	/* border-radius: 25px; */
+	width: 90%;
 	transition: transform 0.3s;
+	position: relative;
 }
+.points {
+	/* position: relative; */
+	margin: 10px 25px;
+	font-size: 1.8rem;
+}
+
 .item:hover {
 	scale: 1.05;
 }
@@ -54,7 +66,15 @@
 	background-image: url('/Makieta/pobrane.png');
 	background-size: cover;
 }
-.points {
-	margin: 10px 25px;
-	font-size: 1.4rem;
+.textInfo {
+	/* position: absolute; */
+	/* top: 0;
+	right: -50%; */
+	background-color: #fff;
+	text-align: center;
+	padding: 30px 10px;
+	font-size: 1.2rem;
+}
+.hidden {
+	display: none;
 }
