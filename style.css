@@ -47,7 +47,7 @@
 	/* border-top: 1px solid gray;
 	border-bottom: 1px solid gray; */
 	/* border-radius: 25px; */
-	width: 90%;
+	/* width: 90%; */
 	transition: transform 0.3s;
 	position: relative;
 }
@@ -57,15 +57,16 @@
 	font-size: 1.8rem;
 }
 
-.item:hover {
-	scale: 1.05;
-}
 .img {
-	width: 80px;
 	height: 80px;
+	width: 80px;
 	background-image: url('/Makieta/pobrane.png');
 	background-size: cover;
 }
+.item:hover {
+	scale: 1.05;
+}
+
 .textInfo {
 	/* position: absolute; */
 	/* top: 0;
@@ -77,4 +78,25 @@
 }
 .hidden {
 	display: none;
+}
+.contact {
+	/* position: absolute;
+	top: 0;
+	right: -90%; */
+	background-color: #fff;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+.fa-solid {
+	font-size: 1.2rem;
+	padding: 5px;
+	margin: 0 10px;
+	transition: transofm 0.3s;
+}
+.fa-solid:hover {
+	scale: 1.2;
+}
+.listItem {
+	display: flex;
+	flex-direction: column;
 }
