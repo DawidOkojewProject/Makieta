@@ -34,6 +34,7 @@
 	text-decoration: none;
 	list-style: none;
 	background-color: #fff;
+	/* background-color: lightseagreen; */
 }
 .item {
 	/* background-color: #fff; */
@@ -58,10 +59,11 @@
 }
 
 .img {
-	height: 80px;
-	width: 80px;
-	background-image: url('/Makieta/pobrane.png');
+	background-image: url('/Makieta/logo_Zero_Waste\ 1.png');
+	height: 60px;
+	width: 110px;
 	background-size: cover;
+	background-position: center;
 }
 .item:hover {
 	scale: 1.05;
@@ -80,6 +82,7 @@
 	display: none;
 }
 .contact {
+	text-align: center;
 	/* position: absolute;
 	top: 0;
 	right: -90%; */
